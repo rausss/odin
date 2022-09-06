@@ -8,7 +8,9 @@ import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class HelloControllerIT {
 
     @BeforeAll
