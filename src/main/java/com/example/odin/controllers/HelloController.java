@@ -13,8 +13,13 @@ public class HelloController {
         return "hej";
     }
     @GetMapping("/add")
-    public int add(@RequestParam int i, @RequestParam int j) {
+    public String add(@RequestParam  int i, @RequestParam int j) {
         return Calculator.add(i, j);
+    }
+
+    @GetMapping("/subtract")
+    public String subtract(@RequestParam  int i, @RequestParam int j) {
+        return Calculator.subtract(i, j);
     }
 
 
