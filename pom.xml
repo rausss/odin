@@ -17,7 +17,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<!-- k -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -45,7 +44,7 @@
 			<artifactId>rest-assured</artifactId>
 			<version>5.1.1</version>
 			<scope>test</scope>
-			<exclusions><!-- https://www.baeldung.com/maven-version-collision -->
+			<exclusions>
 				<exclusion>
 					<groupId>org.apache.groovy</groupId>
 					<artifactId>groovy</artifactId>
@@ -61,6 +60,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/rausss/odin</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
