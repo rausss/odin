@@ -1,7 +1,7 @@
 FROM amazoncorretto:17-alpine
 VOLUME /tmp
 COPY target/*.jar app.jar
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["java","-jar","/app.jar"]
 
 ##FROM maven:3.8.6-eclipse-temurin-17-alpine AS MAVEN_BUILD
