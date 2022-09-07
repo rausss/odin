@@ -102,3 +102,4 @@ jobs:
           dns-name-label: demo-java-ros
           name: demo-java-ros
           location: "Sweden Central"
+          ports: "8080"

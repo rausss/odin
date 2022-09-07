@@ -10,11 +10,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class HelloControllerIT {
 
-    @BeforeAll
+  /* @BeforeAll
     public static void setup() {
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = 8080;
-    }
+    } */
 
     @Test
     public void validatesHello() {
